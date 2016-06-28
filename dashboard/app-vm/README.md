@@ -33,12 +33,15 @@
    - [x] 20160613 account.topay 重写批量代付弹窗,批量复合弹窗
    - [x] 20160613 account.withdraw 用jquery重写弹窗
    - [x] 20160613 payment 增加日期控件; 优化视图UI,表格显示; 重写补发通知弹窗
+   - [x] 20160613 account.topay 重写单笔复核弹窗, 优化radio选项
    - [x] 20160615 user.data 重写tab标签切换,优化试图UI
+   - [x] 20160615 user.data 增加网络图片上传
+
 
 
 ### jQuery命名规范
    动词代表触发事件对象, 名词代表响应事件的实体, 用属性选择器获取内容
-   (尽量避免使用class属性当做操作dom的属性, id选择器仅当元素唯一时使用)
+   (尽量避免使用class属性选择器当做操作dom的节点, id选择器仅当元素唯一时使用)
    - [x] Event object: y-open="demoFormBtn"
    - [x] contant: y-modal="demoForm", y-tab="demo"
    - [x] get attribute: $('[y-open="demoFormBtn"], [y-modal="demoForm"], .y-open, #y-open')

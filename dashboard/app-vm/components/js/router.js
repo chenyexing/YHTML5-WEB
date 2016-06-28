@@ -12,9 +12,7 @@ angular.module('yhtml5', [
         'yhtml5.nav',
         'yhtml5.appList',
         'yhtml5.appsetting',
-        'yhtml5.authentication',
-        'yhtml5.user',
-        'yhtml5.payment'
+        'yhtml5.authentication'
     ])
     .config(['$compileProvider', function($compileProvider) {
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(|blob|):/);
@@ -22,7 +20,7 @@ angular.module('yhtml5', [
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider
         //.when('/dashboard/*', '/dashboard')
-            .otherwise("/authentication/agreement")
+            .otherwise("dashboard")
         $stateProvider
             .state('dashboard', {
                 url: "/dashboard",
